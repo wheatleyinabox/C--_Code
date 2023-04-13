@@ -1,6 +1,7 @@
 class IntArray
 {   
     private:
+        int size;
     public:
         IntArray();
         IntArray(int size);

@@ -1,19 +1,22 @@
 class IntArray
-{   
-    private:
-        int size;
-    public:
-        IntArray();
-        IntArray(int size);
+{
+private:
+    int numberOfElements;
+    int *bag;
+    bool integrityOk(int) const;
 
-        ~IntArray();
+public:
+    IntArray();         // Default Constructor
+    IntArray(int size); // Constructor
 
-        int getLength() const;
+    ~IntArray(); // Destructor
 
-        void add(int val);
-        void set(int index, int val);
-        int get(int index) const;
+    int getLength() const;
 
-        int * toArray();
-        string toString();
+    void add(int val);
+    void set(int index, int val);
+    int get(int index) const;
+
+    int *toArray();
+    std::string toString();
 };

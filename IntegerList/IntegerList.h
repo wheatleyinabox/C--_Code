@@ -13,5 +13,5 @@ public:
 	~IntegerList();					 // Destructor
 	int getLength() const;
 	void setElement(int element, int value); // Sets an element to a value
-	int getElement(int elementnt) const;	 // Returns an element
+	int getElement(int element) const;	 // Returns an element
 };

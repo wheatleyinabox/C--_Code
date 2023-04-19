@@ -1,20 +1,21 @@
-#include <iostream>
 #include <cstdlib>
+#include <string>
+
 #include "IntArray.h"
 
 using namespace std;
 
-IntArray::IntArray()
-{
-    numberOfElements = 100;
-}
 IntArray::IntArray(int size)
 {
-    bag = new int[size];
-    numberOfElements = size;
-    for (int i = 0; i < size; i++)
+    if (size <= MAX_SIZE)
     {
-        *(bag + i) = 0;
+        bag = new int[size];
+        numberOfElements = 0;
+    }
+    else
+    {
+        cerr << "IntArray: Size exceeds maximum of " << MAX_SIZE << " elements." << endl;
+        exit(EXIT_FAILURE);
     }
 }
 
@@ -41,8 +42,8 @@ void IntArray::set(int index, int val)
     }
     else
     {
-        std::cerr << "IntArray: index " << index << " out of bound." << std::endl;
-        std::exit(EXIT_FAILURE);
+        cerr << "IntArray: index " << index << " out of bound." << endl;
+        exit(EXIT_FAILURE);
     }
 }
 
@@ -54,11 +55,45 @@ int IntArray::get(int index) const
     }
     else
     {
-        std::cerr << "IntArray: index " << index << " out of bound" << std::endl;
-        std::exit(EXIT_FAILURE);
+        cerr << "IntArray: index " << index << " out of bound" << endl;
+        exit(EXIT_FAILURE);
     }
 }
 
-void add(int val);
-int *toArray();
-std::string toString();
+bool IntArray::add(int val)
+{
+    if (numberOfElements >= MAX_SIZE)
+    {
+        int newLength = numberOfElements * 2;
+        int *newBag = new int[newLength];
+        memcpy(newBag, bag, numberOfElements * sizeof(int));
+        numberOfElements = newLength;
+        delete[] bag;
+        bag = newBag;
+        return false;
+    }
+    else
+    {
+        *(bag + numberOfElements) = val;
+        numberOfElements++;
+        return true;
+    }
+}
+
+int *IntArray::toArray()
+{
+    int *copy = new int[numberOfElements];
+    copy = bag;
+    return copy;
+}
+
+string IntArray::toString()
+{
+    string str;
+    for (int i = 0; i < numberOfElements; i++)
+    {
+        str += to_string(*(bag + i)) + ",";
+    }
+    str = str.substr(0, str.size() - 1);
+    return str;
+}

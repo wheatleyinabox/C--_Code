@@ -1,19 +1,19 @@
+#include <string>
+#pragma once
 class IntArray
 {
 private:
     int numberOfElements;
-    int *bag;
+    const int MAX_SIZE = 100;
+    int* bag;
     bool integrityOk(int) const;
-
 public:
-    IntArray();         // Default Constructor
-    IntArray(int size); // Constructor
-
+    IntArray(int size = 100); // Constructor
     ~IntArray(); // Destructor
 
     int getLength() const;
 
-    void add(int val);
+    bool add(int val);
     void set(int index, int val);
     int get(int index) const;
 

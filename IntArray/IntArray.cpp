@@ -1,3 +1,15 @@
+/*
+    Name:       Val DeLeon
+    Project:    5
+    Due:        April 19, 2023
+    Course:
+
+    Description:
+                Using classes and pointer, create an IntArray class that essentially creates a bag of ints,
+                which are loaded in using a .dat file. Then use them to print the data count, values, sum,
+                and average.
+*/
+
 #include <cstdlib>
 #include <string>
 
@@ -12,6 +24,7 @@ IntArray::IntArray(int size)
         bag = new int[size];
         numberOfElements = 0;
     }
+
     else
     {
         cerr << "IntArray: Size exceeds maximum of " << MAX_SIZE << " elements." << endl;

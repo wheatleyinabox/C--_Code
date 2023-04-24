@@ -1,4 +1,4 @@
-// rational.h
+// Rational.h
 
 class Rational 
 {

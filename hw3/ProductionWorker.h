@@ -1,4 +1,4 @@
-class ProductionWorker : Employee
+class ProductionWorker : public Employee
 {
     private:
         int shift; // if 1; day, if 2; night

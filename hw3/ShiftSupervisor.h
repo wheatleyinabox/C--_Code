@@ -1,4 +1,4 @@
-class ShiftSupervisor : Employee
+class ShiftSupervisor : public Employee
 {
     private:
         double annualSalary;

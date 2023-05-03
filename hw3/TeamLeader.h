@@ -1,4 +1,4 @@
-class TeamLeader : ProductionWorker
+class TeamLeader : public ProductionWorker
 {
     private:
         double monthlyBonusAmount;

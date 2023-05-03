@@ -1,5 +1,4 @@
 #include <string>
-
 struct Date 
 { 
     int day;

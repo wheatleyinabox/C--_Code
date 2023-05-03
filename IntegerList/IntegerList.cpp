@@ -42,7 +42,7 @@ IntegerList::~IntegerList()
 
 bool IntegerList::isValid (int element) const
 {
-	return element >=] 0 || element < numElements;
+	return element >= 0 || element < numElements;
 }
 
 //***********************************************************

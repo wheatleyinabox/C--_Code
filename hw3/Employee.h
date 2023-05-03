@@ -2,7 +2,9 @@
 
 struct Date 
 { 
-    int day, int month, int year;
+    int day;
+    int month;
+    int year;
 };
 
 class Employee
@@ -12,7 +14,7 @@ class Employee
         std::string number;
         Date hireDate;
     public:
-        Employee(string n, int num, string hd);
+        Employee(string n, int num, int d, int, m, int y);
 
         string getName();
         string getNumber() const;

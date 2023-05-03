@@ -9,9 +9,14 @@ Rational(int numerator, int denominator)
     q = denominator;
 }
 
-Rational Rational::operator*(const Rational &rhs) const
+Rational operator*(const Rational &rhs) const
 {
     return Rational(p * rhs.q, q * rhs.p);
+}
+
+Rational operator*(int lhs, const Rational &rhs)
+{
+    return Rational(lhs) * rhs;
 }
 
 double Rational::toDouble() const

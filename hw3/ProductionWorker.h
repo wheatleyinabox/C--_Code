@@ -12,3 +12,5 @@ class ProductionWorker : Employee
         void setShift(int s);
         void setHourlyRate(int hr);
 }
+
+// operator overloading: <<

@@ -4,7 +4,7 @@ class ShiftSupervisor : public Employee
         double annualSalary;
         double annualProductionBonus;
     public:
-        ShiftSupervisor::ShiftSupervisor() : Employee(string n, int num, int d, int, m, int y);
+        ShiftSupervisor::ShiftSupervisor(double as, double apb) : Employee(string n, int num, int d, int, m, int y);
 
         double getAnnualSalary() const;
         double getAnnualProductionBonus() const;

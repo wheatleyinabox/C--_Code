@@ -16,3 +16,20 @@ ShiftSupervisor::ShiftSupervisor(double as, double apb) : Employee(string n, int
     hireDate = hr;
 }
 
+double ShiftSupervisor::getAnnualSalary() const
+{
+    return annualSalary;
+}
+double ShiftSupervisor::getAnnualProductionBonus() const
+{
+    return annualProductionBonus;
+}
+
+void ShiftSupervisor::setAnnualSalary(double a)
+{
+    annualSalary = a;
+}
+void ShiftSupervisor::setAnnualProductionBonus(int a)
+{
+    annualProductionBonus = a;
+}

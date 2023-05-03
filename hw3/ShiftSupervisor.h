@@ -11,12 +11,4 @@ class ShiftSupervisor : public Employee
 
         void setAnnualSalary(double a);
         void setAnnualProductionBonus(int a);
-//  Inherited:
-        string getName();
-        string getNumber() const;
-        Date getHireDate();
-
-        void setName(string n);
-        void setNumber(int n) const;
-        void setHireDate(int d, int m, int y);
 }

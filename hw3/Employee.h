@@ -12,7 +12,7 @@ class Employee
         std::string number;
         Date hireDate;
     public:
-        Employee(string name, int number, string hireDate);
+        Employee(string n, int num, string hd);
 
         string getName();
         string getNumber() const;

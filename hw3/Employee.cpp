@@ -44,7 +44,7 @@ void Employee::setName(string name)
 {
     this->name = name;
 }
-void Employee::setNumber(int number) const
+void Employee::setNumber(string number) const
 {
     this->number = number;
 }

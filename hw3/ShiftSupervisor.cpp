@@ -16,24 +16,15 @@
 
 using namespace std;
 
-ShiftSupervisor::ShiftSupervisor(string n, string num, int d, int m, int y, int as, double apb)
+ShiftSupervisor::ShiftSupervisor(string name, string number, int month, int day, int year, int annualSalary, double annualProductionBonus) : Employee(string name, string number, int month, int day, int year)
 {
-    name = n;
-    
-    if (isdigit(num))
-    {
-        throw std::invalid_argument(num + ": not valid employee id");
-    }
-    else
-    {
-        number = num;
-    }
+    this->name = name;
+    this->number = number;
+    Date hireDate = {month, day, year};
+    this->hireDate = hireDate;
 
-    Date hd = {d, m, y};
-    hireDate = hd;
-
-    annualSalary = as;
-    annualProductionBonus = apb;
+    this->annualSalary = annualSalary;
+    this->annualProductionBonus = annualProductionBonus;
 }
 
 double ShiftSupervisor::getAnnualSalary() const
@@ -45,11 +36,11 @@ double ShiftSupervisor::getAnnualProductionBonus() const
     return annualProductionBonus;
 }
 
-void ShiftSupervisor::setAnnualSalary(double a)
+void ShiftSupervisor::setAnnualSalary(double annualSalary)
 {
-    annualSalary = a;
+    this->annualSalary = annualSalary;
 }
-void ShiftSupervisor::setAnnualProductionBonus(int a)
+void ShiftSupervisor::setAnnualProductionBonus(int annualProductionBonus)
 {
-    annualProductionBonus = a;
+    this->annualProductionBonus = annualProductionBonus;
 }

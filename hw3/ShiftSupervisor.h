@@ -17,7 +17,7 @@ class ShiftSupervisor : public Employee
         double annualSalary;
         double annualProductionBonus;
     public:
-        ShiftSupervisor(string n, string num, int d, int m, int y, int as, double apb);
+        ShiftSupervisor(string name, string number, int month, int day, int year, int annualSalary, double annualProductionBonus);
 
         double getAnnualSalary() const;
         double getAnnualProductionBonus() const;

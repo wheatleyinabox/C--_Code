@@ -23,7 +23,7 @@ Employee::Employee(string name, string number, int day, int month, int year)
     this->name = name;
     this->number = number;
 
-    Date hireDate = {d, m, y};
+    Date hireDate = {day, month, year};
     this->hireDate = hireDate;
 }
 

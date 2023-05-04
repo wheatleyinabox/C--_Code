@@ -21,7 +21,7 @@ TeamLeader::TeamLeader(string name, string number, int month, int day, int year,
     this->name = name;
     this->number = number;
     Date hireDate = {month, day, year};
-    this->hireDate = hireDate
+    this->hireDate = hireDate;
     
     this->shift = shift;
     this->hourlyRate = hourlyRate;

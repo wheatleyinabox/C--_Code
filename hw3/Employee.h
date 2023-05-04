@@ -19,7 +19,7 @@ struct Date
 
 class Employee
 {
-    protected:
+    private:
         std::string name;
         std::string number;
         Date hireDate;
@@ -29,7 +29,6 @@ class Employee
         std::string getName();
         std::string getNumber() const;
         Date getHireDate();
-
         void setName(std::string n);
         void setNumber(int n) const;
         void setHireDate(int d, int m, int y);

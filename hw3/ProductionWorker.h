@@ -26,4 +26,4 @@ class ProductionWorker : public Employee
         void setHourlyRate(double hr);
 };
 
-ostream& operator<<(ostream& OS, ProductionWorker& pw);
+std::ostream& operator<<(std::ostream& OS, ProductionWorker& productionWorker);

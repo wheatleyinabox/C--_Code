@@ -35,9 +35,10 @@ string Employee::getNumber()
 {
     return number;
 }
-Date Employee::getHireDate()
+string Employee::getHireDate()
 {
-    return hireDate;
+    str result = "" + hireDate.month + "/" + hireDate.day + "/" + hireDate.year;
+    return result;
 }
 
 void Employee::setName(std::string name)

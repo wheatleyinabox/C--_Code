@@ -12,6 +12,7 @@
 #include <cstdlib>
 #include <string>
 
+#include "Employee.h"
 #include "ProductionWorker.h"
 
 using namespace std;
@@ -39,11 +40,11 @@ void ProductionWorker::setHourlyRate(double hr)
     hourlyRate = hr;
 }
 
-ostream& operator<<(ostream& OS, ProductionWorker& pw)
+ostream& operator<<(std::ostream& OS, ProductionWorker& productionWorker)
 {
-    OS << "Name: " << pw.getName() << endl << 
-    "EID: " << pw.getNumber() << endl << 
-    "Hire: " << pw.getHireDate() << endl << 
-    "Shift: " << pw.getShift() << endl << 
-    "Hourly pay rate: " << pw.getHourlyRate();
+    OS << "Name: " << productionWorker.getName() << endl << 
+    "EID: " << productionWorker.getNumber() << endl << 
+    "Hire: " << productionWorker.printHireDate() << endl << 
+    "Shift: " << productionWorker.getShift() << endl << 
+    "Hourly pay rate: " << productionWorker.getHourlyRate();
 }

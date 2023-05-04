@@ -13,9 +13,9 @@
 #include <fstream>
 #include <cstdlib>
 
-#include "ProductionWorker.cpp"
-#include "ShiftSupervisor.cpp"
-#include "TeamLeader.cpp"
+#include "ProductionWorker.h"
+#include "ShiftSupervisor.h"
+#include "TeamLeader.h"
 
 using namespace std;
 

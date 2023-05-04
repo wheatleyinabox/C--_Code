@@ -27,8 +27,8 @@ class Employee
 
         std::string getName();
         std::string getNumber();
-        Date getHireDate();
-        
+        std::string getHireDate();
+
         void setName(std::string name);
         void setNumber(std::string number);
         void setHireDate(int month, int day, int year);

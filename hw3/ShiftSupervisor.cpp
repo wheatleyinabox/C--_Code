@@ -1,3 +1,14 @@
+//
+// Name:        DeLeon, Val
+// Homework:    3
+// Due:         May 5, 2023
+// Course:      cs-2560-01-sp23
+//
+// Description:
+//              Create an functioning Employee class that will be inherited by 3 functional other classes, ProductionWorker,
+//              ShiftSupervisor, and TeamLeader. Use a file called mycomp.cpp to test all, including << operator overloading
+//              for ShiftSupervisor
+//
 #include <cstdlib>
 #include <string>
 
@@ -5,15 +16,10 @@
 
 using namespace std;
 
-ShiftSupervisor::ShiftSupervisor(double as, double apb) : Employee(string n, int num, int d, int, m, int y)
+ShiftSupervisor::ShiftSupervisor(double as, double apb) : Employee(n, num, d, m, y)
 {
     annualSalary = as;
     annualProductionBonus = apb;
-
-    name = n;
-    number =  num;
-    Date hr = {d, m, y};
-    hireDate = hr;
 }
 
 double ShiftSupervisor::getAnnualSalary() const

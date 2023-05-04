@@ -44,12 +44,12 @@ void Employee::setName(string name)
 {
     this->name = name;
 }
-void Employee::setNumber(int n) const
+void Employee::setNumber(int number) const
 {
     this->number = number;
 }
-void Employee::setHireDate(int d, int m, int y)
+void Employee::setHireDate(int month, int day, int year)
 {
-    Date hr = {d, m, y};
+    Date hr = {month, day, year};
     hireDate = hr;
 }

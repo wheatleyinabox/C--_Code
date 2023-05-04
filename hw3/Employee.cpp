@@ -18,12 +18,12 @@
 
 using namespace std;
 
-Employee::Employee(string name, string number, int day, int month, int year)
+Employee::Employee(string name, string number, int month, int day, int year)
 {
     this->name = name;
-    this->number = number;
+    this->number = number; // error check
 
-    Date hireDate = {day, month, year};
+    Date hireDate = {month, day, year};
     this->hireDate = hireDate;
 }
 

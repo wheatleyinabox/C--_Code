@@ -16,18 +16,9 @@
 
 using namespace std;
 
-ProductionWorker::ProductionWorker(string name, string number, int day, int month, int year, int shift, double hourlyRate) : Employee(string name, string number, int day, int month, int year)
+ProductionWorker::ProductionWorker(string name, string number, int month, int day, int year, int shift, double hourlyRate) : Employee(string name, string number, int month, int day, int year)
 {
-    this->name = name;
-    if (isdigit(number))
-    {
-        throw std::invalid_argument(number + ": not valid employee id");
-    }
-    else
-    {
-        this->number = number;
-    }
-
+    this->number = number; // error check
     Date hireDate = {day, month, year};
     this->hireDate = hireDate;
 

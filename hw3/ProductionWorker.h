@@ -17,7 +17,7 @@ private:
     int shift; // if 1; day, if 2; night
     double hourlyRate;
 public:
-    ProductionWorker(string n, string num, int d, int m, int y, int shift, double hourlyRate);
+    ProductionWorker(string name, string number, int month, int day, int year, int shift, double hourlyRate);
 
     int getShift() const;
     double getHourlyRate() const;

@@ -21,15 +21,7 @@ using namespace std;
 Employee::Employee(string n, string num, int d, int m, int y)
 {
     name = n;
-    
-    if (isdigit(num))
-    {
-        throw std::invalid_argument(num + ": not valid employee id");
-    }
-    else
-    {
-        number = num;
-    }
+    number = num;
 
     Date hd = {d, m, y};
     hireDate = hd;

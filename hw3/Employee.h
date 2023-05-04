@@ -19,7 +19,7 @@ struct Date
 
 class Employee
 {
-    private:
+    protected:
         std::string name;
         std::string number;
         Date hireDate;

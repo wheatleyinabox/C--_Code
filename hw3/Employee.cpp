@@ -23,8 +23,8 @@ Employee::Employee(string name, string number, int month, int day, int year)
     this->name = name;
     this->number = number; // error check
 
-    Date hireDate = {month, day, year};
-    this->hireDate = hireDate;
+    Date hr = {month, day, year};
+    hireDate = hr;
 }
 
 string Employee::getName()
@@ -50,6 +50,6 @@ void Employee::setNumber(int n) const
 }
 void Employee::setHireDate(int d, int m, int y)
 {
-    Date hireDate = {d, m, y};
-    this->hireDate = hireDate;
+    Date hr = {d, m, y};
+    hireDate = hr;
 }

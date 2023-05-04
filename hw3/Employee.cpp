@@ -22,7 +22,7 @@ Employee::Employee(string name, string number, int month, int day, int year)
 {
     this->name = name;
     this->number = number; // error check
-
+    
     Date hr = {month, day, year};
     hireDate = hr;
 }
@@ -31,7 +31,7 @@ string Employee::getName()
 {
     return name;
 }
-string Employee::getNumber() const
+string Employee::getNumber()
 {
     return number;
 }
@@ -40,11 +40,11 @@ Date Employee::getHireDate()
     return hireDate;
 }
 
-void Employee::setName(string name)
+void Employee::setName(std::string name)
 {
     this->name = name;
 }
-void Employee::setNumber(string number) const
+void Employee::setNumber(std::string number)
 {
     this->number = number;
 }

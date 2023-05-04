@@ -18,14 +18,6 @@ using namespace std;
 
 TeamLeader::TeamLeader(string name, string number, int month, int day, int year, int shift, double hourlyRate, double monthlyBonusAmount, int requiredTrainingHours, int numOfHoursAttended) : ProductionWorker(name, number, month, day, year, shift, hourlyRate)
 {
-    this->name = name;
-    this->number = number;
-    Date hireDate = {month, day, year};
-    this->hireDate = hireDate;
-    
-    this->shift = shift;
-    this->hourlyRate = hourlyRate;
-
     this->monthlyBonusAmount = monthlyBonusAmount;
     this->requiredTrainingHours = requiredTrainingHours;
     this->numOfHoursAttended = numOfHoursAttended;

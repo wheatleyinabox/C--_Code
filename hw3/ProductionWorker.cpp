@@ -18,11 +18,6 @@ using namespace std;
 
 ProductionWorker::ProductionWorker(string name, string number, int month, int day, int year, int shift, double hourlyRate) : Employee(name, number, month, day, year)
 {
-    this->name = name;
-    this->number = number; // error check
-    Date hireDate = {month, day, year};
-    this->hireDate = hireDate;
-
     this->shift = shift;
     this->hourlyRate = hourlyRate;
 }
@@ -39,7 +34,7 @@ void ProductionWorker::setShift(int s)
 {
     shift = s;
 }
-void ProductionWorker::setHourlyRate(int hr)
+void ProductionWorker::setHourlyRate(double hr)
 {
     hourlyRate = hr;
 }

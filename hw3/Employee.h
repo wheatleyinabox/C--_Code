@@ -16,7 +16,6 @@ struct Date
     int day;
     int year;
 };
-
 class Employee
 {
     private:
@@ -27,9 +26,10 @@ class Employee
         Employee(std::string name, std::string number, int month, int day, int year);
 
         std::string getName();
-        std::string getNumber() const;
+        std::string getNumber();
         Date getHireDate();
-        void setName(std::string n);
-        void setNumber(int n) const;
-        void setHireDate(int d, int m, int y);
+        
+        void setName(std::string name);
+        void setNumber(std::string number);
+        void setHireDate(int month, int day, int year);
 };

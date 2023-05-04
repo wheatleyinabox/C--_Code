@@ -17,12 +17,13 @@ class ProductionWorker : public Employee
         int shift; // if 1; day, if 2; night
         double hourlyRate;
     public:
-        ProductionWorker(string name, string number, int month, int day, int year, int shift, double hourlyRate);
+        ProductionWorker(std::string name, std::string number, int month, int day, int year, int shift, double hourlyRate);
 
         int getShift() const;
         double getHourlyRate() const;
+        
         void setShift(int s);
-        void setHourlyRate(int hr);
+        void setHourlyRate(double hr);
 };
 
 ostream& operator<<(ostream& OS, ProductionWorker& pw);

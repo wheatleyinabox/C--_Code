@@ -13,7 +13,6 @@
 #include <fstream>
 #include <cstdlib>
 
-#include "Employee.cpp"
 #include "ProductionWorker.cpp"
 #include "ShiftSupervisor.cpp"
 #include "TeamLeader.cpp"
@@ -25,6 +24,7 @@ int main()
     cout << "My Company by V. DeLeon" << endl << endl;
 
     ProductionWorker worker1("Mark", "M-628", 28, 6, 1989, 2, 8.70);
+    // "Mark", "M-628", 28, 6, 1989, 2, 8.70
     cout << worker1;
 
     return 0;

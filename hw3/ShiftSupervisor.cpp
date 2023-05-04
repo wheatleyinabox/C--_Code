@@ -16,7 +16,7 @@
 
 using namespace std;
 
-ShiftSupervisor::ShiftSupervisor(string name, string number, int month, int day, int year, int annualSalary, double annualProductionBonus) : Employee(string name, string number, int month, int day, int year)
+ShiftSupervisor::ShiftSupervisor(string name, string number, int month, int day, int year, int annualSalary, double annualProductionBonus) : Employee(name, number, month, day, year)
 {
     this->name = name;
     this->number = number; // error check

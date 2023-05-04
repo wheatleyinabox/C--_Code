@@ -16,7 +16,7 @@
 
 using namespace std;
 
-ProductionWorker::ProductionWorker(string name, string number, int month, int day, int year, int shift, double hourlyRate) : Employee(string name, string number, int month, int day, int year)
+ProductionWorker::ProductionWorker(string name, string number, int month, int day, int year, int shift, double hourlyRate) : Employee(name, number, month, day, year)
 {
     this->name = name;
     this->number = number; // error check

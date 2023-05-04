@@ -16,7 +16,7 @@ class TeamLeader : public ProductionWorker
         int requiredTrainingHours;
         int numOfHoursAttended;
     public:
-        TeamLeader(double m, int r, int n, int s, double hr);
+        TeamLeader(string name, string number, int month, int day, int year, int shift, double hourlyRate, double monthlyBonusAmount, int requiredTrainingHours, int numOfHoursAttended);
 
         double getMonthlyBonusAmount() const;
         int getRequiredTrainingHours() const;

@@ -16,14 +16,19 @@
 
 using namespace std;
 
-TeamLeader::TeamLeader(double m, int r, int n, int s, double hr)
+TeamLeader::TeamLeader(string name, string number, int month, int day, int year, int shift, double hourlyRate, double monthlyBonusAmount, int requiredTrainingHours, int numOfHoursAttended) : ProductionWorker(string name, string number, int month, int day, int year, int shift, double hourlyRate)
 {
-    monthlyBonusAmount = m;
-    requiredTrainingHours = r;
-    numOfHoursAttended = n;
+    this->name = name;
+    this->number = number;
+    Date hireDate = {month, day, year};
+    this->hireDate = hireDate
     
-    shift = s;
-    hourlyRate = hr;
+    this->shift = shift;
+    this->hourlyRate = hourlyRate;
+
+    this->monthlyBonusAmount = monthlyBonusAmount;
+    this->requiredTrainingHours = requiredTrainingHours;
+    this->numOfHoursAttended = numOfHoursAttended;
 }
 
 double TeamLeader::getMonthlyBonusAmount() const
@@ -39,15 +44,15 @@ int TeamLeader::getNumOfHoursAttended() const
     return numOfHoursAttended;
 }
 
-void TeamLeader::setMonthlyBonusAmount(double m)
+void TeamLeader::setMonthlyBonusAmount(double monthlyBonusAmount)
 {
-    monthlyBonusAmount = m;
+    this->monthlyBonusAmount = monthlyBonusAmount;
 }
-void TeamLeader::setRequiredTrainingHours(int r)
+void TeamLeader::setRequiredTrainingHours(int requiredTrainingHours)
 {
-    requiredTrainingHours = r;
+    this->requiredTrainingHours = requiredTrainingHours;
 }
-void TeamLeader::setNumOfHoursAttended(int n)
+void TeamLeader::setNumOfHoursAttended(int numOfHoursAttended)
 {
-    numOfHoursAttended = n;
+    this->numOfHoursAttended = numOfHoursAttended;
 }

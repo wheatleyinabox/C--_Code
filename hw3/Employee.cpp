@@ -18,13 +18,13 @@
 
 using namespace std;
 
-Employee::Employee(string n, string num, int d, int m, int y)
+Employee::Employee(string name, string number, int day, int month, int year)
 {
-    name = n;
-    number = num;
+    this->name = name;
+    this->number = number;
 
-    Date hd = {d, m, y};
-    hireDate = hd;
+    Date hireDate = {d, m, y};
+    this->hireDate = hireDate;
 }
 
 string Employee::getName()
@@ -40,16 +40,16 @@ Date Employee::getHireDate()
     return hireDate;
 }
 
-void Employee::setName(string n)
+void Employee::setName(string name)
 {
-    name = n;
+    this->name = name;
 }
 void Employee::setNumber(int n) const
 {
-    number = n;
+    this->number = number;
 }
 void Employee::setHireDate(int d, int m, int y)
 {
-    Date newHR = {d, m, y};
-    hireDate = newHR;
+    Date hireDate = {d, m, y};
+    this->hireDate = hireDate;
 }

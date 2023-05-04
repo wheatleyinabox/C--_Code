@@ -11,7 +11,6 @@
 //
 #include <cstdlib>
 #include <string>
-
 #include "ShiftSupervisor.h"
 
 using namespace std;

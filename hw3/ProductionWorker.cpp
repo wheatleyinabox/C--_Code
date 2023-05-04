@@ -16,8 +16,22 @@
 
 using namespace std;
 
-ProductionWorker::ProductionWorker(int s, double hr) : Employee(n, num, d, m, y)
+ProductionWorker::ProductionWorker(string n, string num, int d, int m, int y, int s, double hr)
 {
+    name = n;
+    
+    if (isdigit(num))
+    {
+        throw std::invalid_argument(num + ": not valid employee id");
+    }
+    else
+    {
+        number = num;
+    }
+
+    Date hd = {d, m, y};
+    hireDate = hd;
+
     shift = s;
     hourlyRate = hr;
 }

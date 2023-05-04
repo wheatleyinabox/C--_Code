@@ -16,9 +16,8 @@ class ProductionWorker : public Employee
 private:
     int shift; // if 1; day, if 2; night
     double hourlyRate;
-
 public:
-    ProductionWorker::ProductionWorker(int s, double hr) : Employee(n, num, d, m, y);
+    ProductionWorker(string n, string num, int d, int m, int y, int s, double hr);
 
     int getShift() const;
     double getHourlyRate() const;

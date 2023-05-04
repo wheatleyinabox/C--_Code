@@ -16,7 +16,7 @@ class TeamLeader : public ProductionWorker
         int requiredTrainingHours;
         int numOfHoursAttended;
     public:
-        TeamLeader::TeamLeader(double m, int r, int n) : ProductionWorker(s, hr);
+        TeamLeader(double m, int r, int n, int s, double hr);
 
         double getMonthlyBonusAmount() const;
         int getRequiredTrainingHours() const;

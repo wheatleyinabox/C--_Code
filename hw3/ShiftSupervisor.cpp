@@ -16,8 +16,22 @@
 
 using namespace std;
 
-ShiftSupervisor::ShiftSupervisor(double as, double apb) : Employee(n, num, d, m, y)
+ShiftSupervisor::ShiftSupervisor(string n, string num, int d, int m, int y, int as, double apb)
 {
+    name = n;
+    
+    if (isdigit(num))
+    {
+        throw std::invalid_argument(num + ": not valid employee id");
+    }
+    else
+    {
+        number = num;
+    }
+
+    Date hd = {d, m, y};
+    hireDate = hd;
+
     annualSalary = as;
     annualProductionBonus = apb;
 }

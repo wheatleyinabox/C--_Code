@@ -16,11 +16,14 @@
 
 using namespace std;
 
-TeamLeader::TeamLeader(double m, int r, int n) : ProductionWorker(int s, double hr)
+TeamLeader::TeamLeader(double m, int r, int n, int s, double hr)
 {
     monthlyBonusAmount = m;
     requiredTrainingHours = r;
     numOfHoursAttended = n;
+    
+    shift = s;
+    hourlyRate = hr;
 }
 
 double TeamLeader::getMonthlyBonusAmount() const

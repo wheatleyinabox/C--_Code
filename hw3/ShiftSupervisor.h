@@ -9,13 +9,15 @@
 //              ShiftSupervisor, and TeamLeader. Use a file called mycomp.cpp to test all, including << operator overloading
 //              for ShiftSupervisor
 //
+#include <cstdlib>
+#include <string>
 class ShiftSupervisor : public Employee
 {
     private:
         double annualSalary;
         double annualProductionBonus;
     public:
-        ShiftSupervisor::ShiftSupervisor(double as, double apb) : Employee(n, num, d, m, y);
+        ShiftSupervisor(string n, string num, int d, int m, int y, int as, double apb);
 
         double getAnnualSalary() const;
         double getAnnualProductionBonus() const;

@@ -21,7 +21,8 @@ using namespace std;
 
 int main()
 {
-    cout << "My Company by V. DeLeon" << endl << endl;
+    cout << "My Company by V. DeLeon" << endl
+         << endl;
 
     ProductionWorker worker1("Mark", "M-628", 28, 6, 1989, 2, 8.70);
     // "Mark", "M-628", 28, 6, 1989, 2, 8.70

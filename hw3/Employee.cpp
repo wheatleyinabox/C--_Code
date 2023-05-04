@@ -37,7 +37,7 @@ string Employee::getNumber()
 }
 string Employee::getHireDate()
 {
-    str result = "" + hireDate.month + "/" + hireDate.day + "/" + hireDate.year;
+    string result = "" << hireDate.month << "/" << hireDate.day << "/" << hireDate.year;
     return result;
 }
 

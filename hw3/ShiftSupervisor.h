@@ -11,13 +11,14 @@
 //
 #include <cstdlib>
 #include <string>
+
 class ShiftSupervisor : public Employee
 {
     private:
         double annualSalary;
         double annualProductionBonus;
     public:
-        ShiftSupervisor(string name, string number, int month, int day, int year, int annualSalary, double annualProductionBonus);
+        ShiftSupervisor(std::string name, std::string number, int month, int day, int year, int annualSalary, double annualProductionBonus);
 
         double getAnnualSalary() const;
         double getAnnualProductionBonus() const;

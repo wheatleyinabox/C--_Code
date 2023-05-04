@@ -11,8 +11,6 @@
 //
 #include <cstdlib>
 #include <string>
-
-#include "Employee.h"
 #include "ProductionWorker.h"
 
 using namespace std;

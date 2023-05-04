@@ -19,7 +19,7 @@ using namespace std;
 ShiftSupervisor::ShiftSupervisor(string name, string number, int month, int day, int year, int annualSalary, double annualProductionBonus) : Employee(string name, string number, int month, int day, int year)
 {
     this->name = name;
-    this->number = number;
+    this->number = number; // error check
     Date hireDate = {month, day, year};
     this->hireDate = hireDate;
 

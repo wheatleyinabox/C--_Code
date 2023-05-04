@@ -46,9 +46,9 @@ void ProductionWorker::setHourlyRate(int hr)
 
 ostream& operator<<(ostream& OS, ProductionWorker& pw)
 {
-    OS << "Name: " << pw.getName() << endl
-       << "EID: " << pw.getNumber() << endl
-       << "Hire: " << pw.getHireDate() << endl
-       << "Shift: " << pw.getShift() << endl
-       << "Hourly pay rate: " << pw.getHourlyRate();
+    OS << "Name: " << pw.getName() << endl << 
+    "EID: " << pw.getNumber() << endl << 
+    "Hire: " << pw.getHireDate() << endl << 
+    "Shift: " << pw.getShift() << endl << 
+    "Hourly pay rate: " << pw.getHourlyRate();
 }

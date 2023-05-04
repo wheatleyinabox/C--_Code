@@ -16,24 +16,23 @@
 
 using namespace std;
 
-ProductionWorker::ProductionWorker(string n, string num, int d, int m, int y, int s, double hr)
+ProductionWorker::ProductionWorker(string name, string number, int day, int month, int year, int shift, double hourlyRate) : Employee(string name, string number, int day, int month, int year)
 {
-    name = n;
-    
-    if (isdigit(num))
+    this->name = name;
+    if (isdigit(number))
     {
-        throw std::invalid_argument(num + ": not valid employee id");
+        throw std::invalid_argument(number + ": not valid employee id");
     }
     else
     {
-        number = num;
+        this->number = number;
     }
 
-    Date hd = {d, m, y};
-    hireDate = hd;
+    Date hireDate = {day, month, year};
+    this->hireDate = hireDate;
 
-    shift = s;
-    hourlyRate = hr;
+    this->shift = shift;
+    this->hourlyRate = hourlyRate;
 }
 
 int ProductionWorker::getShift() const

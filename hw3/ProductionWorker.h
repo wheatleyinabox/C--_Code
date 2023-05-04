@@ -13,16 +13,16 @@
 #include <iostream>
 class ProductionWorker : public Employee
 {
-private:
-    int shift; // if 1; day, if 2; night
-    double hourlyRate;
-public:
-    ProductionWorker(string name, string number, int month, int day, int year, int shift, double hourlyRate);
+    private:
+        int shift; // if 1; day, if 2; night
+        double hourlyRate;
+    public:
+        ProductionWorker(string name, string number, int month, int day, int year, int shift, double hourlyRate);
 
-    int getShift() const;
-    double getHourlyRate() const;
-    void setShift(int s);
-    void setHourlyRate(int hr);
+        int getShift() const;
+        double getHourlyRate() const;
+        void setShift(int s);
+        void setHourlyRate(int hr);
 };
 
 ostream& operator<<(ostream& OS, ProductionWorker& pw);

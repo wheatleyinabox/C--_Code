@@ -25,7 +25,7 @@ int main()
     cout << "My Company by V. DeLeon" << endl
          << endl;
 
-    TeamLeader tl("Cool Dude", "152-P", 9, 12, 2016, 1, 30, 100, 0, 50);
+    TeamLeader tl("Cool Dude", "P-152", 9, 12, 2016, 1, 30, 100, 0, 50);
     ShiftSupervisor ss("lazybones", "333-S", 9, 12, 2016, 30, 0.5);
 
     // user input workers

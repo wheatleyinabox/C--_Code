@@ -53,7 +53,7 @@ void Employee::setName(std::string name)
 }
 void Employee::setNumber(std::string number)
 {
-    if ((isdigit(number[0]) && isdigit(number[1]) && isdigit(number[2]) && ???????????? && isalpha(number[4])))
+    if ((isdigit(number[0]) && isdigit(number[1]) && isdigit(number[2]) && number.find('-') != std::string::npos && isalpha(number[4])))
     {
         this->number = number;
     }

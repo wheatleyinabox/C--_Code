@@ -15,6 +15,12 @@
 
 using namespace std;
 
+ProductionWorker::ProductionWorker() : Employee()
+{
+    shift = 0;
+    hourlyRate = 0;
+}
+
 ProductionWorker::ProductionWorker(string name, string number, int month, int day, int year, int shift, double hourlyRate) : Employee(name, number, month, day, year)
 {
     this->shift = shift;

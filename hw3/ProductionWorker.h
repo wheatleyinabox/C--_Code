@@ -17,6 +17,7 @@ class ProductionWorker : public Employee
         int shift; // if 1; day, if 2; night
         double hourlyRate;
     public:
+        ProductionWorker(); // default constructor
         ProductionWorker(std::string name, std::string number, int month, int day, int year, int shift, double hourlyRate);
 
         int getShift() const;

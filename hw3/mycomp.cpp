@@ -13,6 +13,7 @@
 #include <fstream>
 #include <cstdlib>
 
+#include "Employee.cpp"
 #include "ProductionWorker.h"
 #include "ShiftSupervisor.h"
 #include "TeamLeader.h"

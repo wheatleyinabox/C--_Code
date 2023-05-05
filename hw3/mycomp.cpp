@@ -28,10 +28,11 @@ int main()
     TeamLeader tl("Cool Dude", "152-P", 9, 12, 2016, 1, 30, 100, 0, 50);
     ShiftSupervisor ss("lazybones", "333-S", 9, 12, 2016, 30, 0.5);
 
-    // user input ONE worker - tests exception
+    // user input a worker - tests exception
         ProductionWorker worker1;
         // Sample:
         //ProductionWorker worker1("Mark Fischbach", ***"M-628"***, 28, 6, 1989, 2, 8.70);
+        
         string name;
         cout << "Please enter the employee's name: " << endl;
         getline(cin, name);

@@ -17,22 +17,18 @@
 
 using namespace std;
 
+Employee::Employee()
+{
+    name = "";
+    number = "";
+    Date hr = {0,0,0};
+    hireDate = hr;
+}
+
 Employee::Employee(string name, string number, int month, int day, int year)
 {
     this->name = name;
-
-    for (int i = 0; i < number.length(); i++)
-    {
-        if ()
-        {
-            throw std::invalid_argument(number + ": not valid employee id");
-        }
-        else
-        {
-            this->number = number; // WHAT DO
-        }
-    }
-    
+    this->number = number;
     Date hr = {month, day, year};
     hireDate = hr;
 }
@@ -57,6 +53,17 @@ void Employee::setName(std::string name)
 }
 void Employee::setNumber(std::string number)
 {
+    // for (int i = 0; i < number.length(); i++)
+    // {
+    //     if ()
+    //     {
+    //         throw std::invalid_argument(number + ": not valid employee id");
+    //     }
+    //     else
+    //     {
+    //         this->number = number; // WHAT DO
+    //     }
+    // }
     this->number = number;
 }
 void Employee::setHireDate(int month, int day, int year)

@@ -45,4 +45,6 @@ ostream& operator<<(std::ostream& OS, ProductionWorker& productionWorker)
     "Hire: " << productionWorker.getHireDate() << endl << 
     "Shift: " << productionWorker.getShift() << endl << 
     "Hourly pay rate: " << productionWorker.getHourlyRate();
+
+    return OS;
 }

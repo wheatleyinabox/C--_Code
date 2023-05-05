@@ -11,6 +11,7 @@
 */
 
 #include <cstdlib>
+#include <iostream>
 #include <string>
 
 #include "IntArray.h"
@@ -102,7 +103,7 @@ int *IntArray::toArray()
 
 string IntArray::toString()
 {
-    string str;
+    string str = "";
     for (int i = 0; i < numberOfElements; i++)
     {
         str += to_string(*(bag + i)) + ",";

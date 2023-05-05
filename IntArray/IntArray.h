@@ -9,9 +9,8 @@
                 which are loaded in using a .dat file. Then use them to print the data count, values, sum,
                 and average.
 */
-
-#include <string>
 #pragma once
+#include <string>
 class IntArray
 {
 private:

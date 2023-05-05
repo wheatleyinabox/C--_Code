@@ -12,7 +12,7 @@
 
 #include <iostream>
 #include <fstream>
-#include "IntArray.cpp"
+#include "IntArray.h"
 using namespace std;
 
 int main()
@@ -20,7 +20,7 @@ int main()
     cout << "IntArray by V. DeLeon" << endl
          << endl;
 
-    int sum, num;
+    int sum = 0, num = 0;
     IntArray *ia = new IntArray();
     
     ifstream file;
@@ -40,7 +40,9 @@ int main()
         sum += *(bagPtr + i);
     }
     cout << "Sum = " << sum << endl;
+
     sum = sum / ia->getLength();
+
     cout << "Average = " << sum << endl << endl;
 
     for (int c = 0; c < ia->getLength(); c++)

@@ -37,7 +37,7 @@ string Employee::getNumber()
 }
 string Employee::getHireDate()
 {
-    string result = "" << hireDate.month << "/" << hireDate.day << "/" << hireDate.year;
+    string result = std::to_string(hireDate.month) + "/" + std::to_string(hireDate.day) + "/" + std::to_string(hireDate.year);
     return result;
 }
 

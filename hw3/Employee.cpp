@@ -53,18 +53,14 @@ void Employee::setName(std::string name)
 }
 void Employee::setNumber(std::string number)
 {
-    // for (int i = 0; i < number.length(); i++)
-    // {
-    //     if ()
-    //     {
-    //         throw std::invalid_argument(number + ": not valid employee id");
-    //     }
-    //     else
-    //     {
-    //         this->number = number; // WHAT DO
-    //     }
-    // }
-    this->number = number;
+    if ((isdigit(number[0]) && isdigit(number[1]) && isdigit(number[2]) && ???????????? && isalpha(number[4])))
+    {
+        this->number = number;
+    }
+    else
+    {
+        throw std::invalid_argument(number + ": not valid employee id");
+    }
 }
 void Employee::setHireDate(int month, int day, int year)
 {

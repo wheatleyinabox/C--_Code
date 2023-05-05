@@ -20,7 +20,8 @@ using namespace std;
 Employee::Employee(string name, string number, int month, int day, int year)
 {
     this->name = name;
-    this->number = number; // error check
+
+    this->number = number; // WHAT DO
     
     Date hr = {month, day, year};
     hireDate = hr;

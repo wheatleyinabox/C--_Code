@@ -10,7 +10,6 @@
 //              for ShiftSupervisor
 //
 #include <iostream>
-#include <cstdlib>
 #include <string>
 #include <stdexcept>
 
@@ -27,11 +26,11 @@ Employee::Employee(string name, string number, int month, int day, int year)
     hireDate = hr;
 }
 
-string Employee::getName()
+string Employee::getName() const
 {
     return name;
 }
-string Employee::getNumber()
+string Employee::getNumber() const
 {
     return number;
 }

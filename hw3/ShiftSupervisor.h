@@ -9,9 +9,8 @@
 //              ShiftSupervisor, and TeamLeader. Use a file called mycomp.cpp to test all, including << operator overloading
 //              for ShiftSupervisor
 //
-#include <cstdlib>
 #include <string>
-
+#include "Employee.h"
 class ShiftSupervisor : public Employee
 {
     private:

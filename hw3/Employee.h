@@ -25,8 +25,8 @@ class Employee
     public:
         Employee(std::string name, std::string number, int month, int day, int year);
 
-        std::string getName();
-        std::string getNumber();
+        std::string getName() const;
+        std::string getNumber() const;
         std::string getHireDate();
 
         void setName(std::string name);

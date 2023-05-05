@@ -9,6 +9,7 @@
 //              ShiftSupervisor, and TeamLeader. Use a file called mycomp.cpp to test all, including << operator overloading
 //              for ShiftSupervisor
 //
+#include <string>
 class TeamLeader : public ProductionWorker
 {
     private:

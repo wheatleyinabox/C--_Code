@@ -42,7 +42,7 @@ ostream& operator<<(std::ostream& OS, ProductionWorker& productionWorker)
 {
     OS << "Name: " << productionWorker.getName() << endl << 
     "EID: " << productionWorker.getNumber() << endl << 
-    "Hire: " << productionWorker.printHireDate() << endl << 
+    "Hire: " << productionWorker.getHireDate() << endl << 
     "Shift: " << productionWorker.getShift() << endl << 
     "Hourly pay rate: " << productionWorker.getHourlyRate();
 }

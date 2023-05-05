@@ -21,7 +21,17 @@ Employee::Employee(string name, string number, int month, int day, int year)
 {
     this->name = name;
 
-    this->number = number; // WHAT DO
+    for (int i = 0; i < number.length(); i++)
+    {
+        if ()
+        {
+            throw std::invalid_argument(number + ": not valid employee id");
+        }
+        else
+        {
+            this->number = number; // WHAT DO
+        }
+    }
     
     Date hr = {month, day, year};
     hireDate = hr;

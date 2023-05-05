@@ -61,7 +61,7 @@ int main()
     ProductionWorker worker2("John Doe", "123-A", 5, 1, 2023, 1, 25);
     ProductionWorker worker3("Val DeLeon", "403-W", 4, 3, 2003, 1, 25);
 
-    cout << worker1 << endl << endl;
+    cout << endl << worker1 << endl << endl;
     cout << worker2 << endl << endl;
     cout << worker3 << endl;
 

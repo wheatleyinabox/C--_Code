@@ -11,19 +11,10 @@
 //
 #include <iostream>
 #include <string>
-#include <stdexcept>
 
 #include "Employee.h"
 
 using namespace std;
-
-Employee::Employee()
-{
-    name = "";
-    number = "";
-    Date hr = {0,0,0};
-    hireDate = hr;
-}
 
 Employee::Employee(string name, string number, int month, int day, int year)
 {

@@ -10,6 +10,8 @@
 //              for ShiftSupervisor
 //
 #include <string>
+#include <iostream>
+#pragma once
 struct Date 
 { 
     int month;
@@ -23,7 +25,6 @@ class Employee
         std::string number;
         Date hireDate;
     public:
-        Employee(); // default constructor
         Employee(std::string name, std::string number, int month, int day, int year);
 
         std::string getName() const;

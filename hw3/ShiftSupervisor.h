@@ -10,6 +10,7 @@
 //              for ShiftSupervisor
 //
 #include <string>
+#include "Employee.h"
 class ShiftSupervisor : public Employee
 {
     private:

@@ -10,6 +10,7 @@
 //              for ShiftSupervisor
 //
 #include <string>
+#include "ProductionWorker.h"
 class TeamLeader : public ProductionWorker
 {
     private:

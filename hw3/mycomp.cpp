@@ -13,10 +13,10 @@
 #include <fstream>
 #include <cstdlib>
 
-#include "Employee.cpp"
-#include "ProductionWorker.cpp"
-#include "ShiftSupervisor.cpp"
-#include "TeamLeader.cpp"
+#include "Employee.h"
+#include "ProductionWorker.h"
+#include "ShiftSupervisor.h"
+#include "TeamLeader.h"
 
 using namespace std;
 
@@ -29,7 +29,7 @@ int main()
     ShiftSupervisor ss("lazybones", "333-S", 9, 12, 2016, 30, 0.5);
 
     // user input a worker - tests exception
-        ProductionWorker worker1;
+        ProductionWorker worker1("", "", 0, 0, 0, 0, 0);
         // Sample:
         //ProductionWorker worker1("Mark Fischbach", ***"M-628"***, 28, 6, 1989, 2, 8.70);
         

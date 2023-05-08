@@ -11,15 +11,10 @@
 //
 #include <cstdlib>
 #include <string>
+#include <iostream>
 #include "ProductionWorker.h"
 
 using namespace std;
-
-ProductionWorker::ProductionWorker() : Employee()
-{
-    shift = 0;
-    hourlyRate = 0;
-}
 
 ProductionWorker::ProductionWorker(string name, string number, int month, int day, int year, int shift, double hourlyRate) : Employee(name, number, month, day, year)
 {
@@ -44,13 +39,10 @@ void ProductionWorker::setHourlyRate(double hr)
     hourlyRate = hr;
 }
 
-ostream& operator<<(std::ostream& OS, ProductionWorker& productionWorker)
+ostream& operator<<(std::ostream& OS, ProductionWorker productionWorker)
 {
-    OS << "Name: " << productionWorker.getName() << endl << 
-    "EID: " << productionWorker.getNumber() << endl << 
-    "Hire: " << productionWorker.getHireDate() << endl << 
-    "Shift: " << productionWorker.getShift() << endl << 
-    "Hourly pay rate: " << productionWorker.getHourlyRate();
-
+    OS << "Name: " << productionWorker.getName() << endl << "EID: " << productionWorker.getNumber() << endl
+    << "Hire: " << productionWorker.getHireDate() << endl << "Shift: " << productionWorker.getShift() << endl 
+    << "Hourly pay rate: " << productionWorker.getHourlyRate();
     return OS;
 }

@@ -5,7 +5,7 @@
 
 using namespace std;
 
-CruiseShip::CruiseShip(int maxNumberOfPassengers) : Ship(shipName, constructionDate)
+CruiseShip::CruiseShip(std::string shipName, std::string constructionDate, int maxNumberOfPassengers) : Ship(shipName, constructionDate)
 {
     this->maxNumberOfPassengers = maxNumberOfPassengers;
 }

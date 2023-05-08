@@ -1,13 +1,14 @@
 #include "Ship.h"
+#pragma once
 class CruiseShip : public Ship
 {
     private:
         int maxNumberOfPassengers;
     public:
-        CruiseShip(int maxNumberOfPassengers) : Ship(shipName, constructionDate);
+        CruiseShip(std::string shipName, std::string constructionDate, int maxNumberOfPassengers);
         
         int getMaxNumberOfPassengers() const;
-        void setMaxNumberOfPassengers();
+        void setMaxNumberOfPassengers(int maxNumberOfPassengers);
 
-        // print() *OVERRIDDES BASE FUNCTION*
+        // vitural print() *OVERRIDDES BASE FUNCTION*
 };

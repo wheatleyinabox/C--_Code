@@ -3,18 +3,18 @@
 
 #include "CargoShip.h"
 
-CargoShip::CargoShip(int capacityInTonnage) : Ship(shipName, constructionDate)
+CargoShip::CargoShip(std::string shipName, std::string constructionDate, int capacity) : Ship(shipName, constructionDate)
 {
-    this->capacityInTonnage = capacityInTonnage;
+    this->capacity = capacity;
 }
 
-int getCapacityInTonnage() const
+int CargoShip::getCapacity() const
 {
-    return capacityInTonnage;
+    return capacity;
 }
-void setCapacityInTonnage()
+void CargoShip::setCapacity(int capacity)
 {
-    this->capacityInTonnage = capacityInTonnage;
+    this->capacity = capacity;
 }
 
 // print() override

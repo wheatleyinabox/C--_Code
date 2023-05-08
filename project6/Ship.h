@@ -1,15 +1,17 @@
+#pragma once
 class Ship
 {
     private:
-        string shipName;
-        string constructionDate;
+        std::string shipName;
+        std::string constructionDate;
     public:
-        Ship(string shipName, string constructionDate);
-        string getShipName();
-        string getConstructionDate();
+        Ship(std::string shipName, std::string constructionDate);
+        
+        std::string getShipName() const;
+        std::string getConstructionDate() const;
 
-        void setShipName();
-        void setConstructionDate();
+        void setShipName(std::string shipName);
+        void setConstructionDate(std::string constructionDate);
 
         // print() *<< overload*
 };

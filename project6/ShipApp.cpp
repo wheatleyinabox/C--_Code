@@ -2,6 +2,8 @@
 #include <fstream>
 #include <string>
 
+using namespace std;
+
 #include "Ship.h"
 #include "CruiseShip.h"
 #include "CargoShip.h"

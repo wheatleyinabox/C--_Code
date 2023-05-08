@@ -1,13 +1,14 @@
 #include "Ship.h"
+#pragma once
 class CargoShip : public Ship
 {
-    private:
-        int capacityInTonnage;
-    public:
-        CargoShip(int capacityInTonnage) : Ship(shipName, constructionDate);
+private:
+    int capacity;
 
-        int getCapacityInTonnage() const;
-        void setCapacityInTonnage();
+public:
+    CargoShip(std::string shipName, std::string constructionDate, int capacity);
+    int getCapacity() const;
+    void setCapacity(int capacity);
 
-        // print() OVERRIDE
+    // print() OVERRIDE
 };

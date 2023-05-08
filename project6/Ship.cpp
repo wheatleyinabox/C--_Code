@@ -4,26 +4,26 @@
 
 using namespace std;
 
-Ship::Ship(string shipName, string constructionDate)
+Ship::Ship(std::string shipName, std::string constructionDate)
 {
     this->shipName = shipName;
     this->constructionDate = constructionDate;
 }
 
-string Ship::getShipName()
+std::string Ship::getShipName() const
 {
     return shipName;
 }
-string Ship::getConstructionDate()
+std::string Ship::getConstructionDate() const
 {
     return constructionDate;
 }
 
-void Ship::getShipName(string shipName)
+void Ship::setShipName(std::string shipName)
 {
     this->shipName = shipName;
 }
-void Ship::setConstructionDate(string constructionDate)
+void Ship::setConstructionDate(std::string constructionDate)
 {
     this->constructionDate = constructionDate;
 }

@@ -27,4 +27,9 @@ void CargoShip::setCapacity(int capacity)
     this->capacity = capacity;
 }
 
-// print() override
+void CargoShip::printShip(CargoShip &cs)
+{
+    cout << "~-= CRUISE SHIP =-~" << endl
+         << "Name: " << cs.getShipName() << endl
+         << "Maximum Cargo Capacity: " + capacity << endl;
+}

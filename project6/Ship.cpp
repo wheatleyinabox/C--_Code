@@ -38,4 +38,9 @@ void Ship::setConstructionDate(std::string constructionDate)
     this->constructionDate = constructionDate;
 }
 
-// print() *<< overload*
+void Ship::printShip()
+{
+    cout << "~-= SHIP =-~" << endl
+         << "Name: " << shipName << endl
+         << "Date Construction: " + constructionDate << endl;
+}

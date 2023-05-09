@@ -30,4 +30,9 @@ void CruiseShip::setMaxNumberOfPassengers(int maxNumberOfPassengers)
     this->maxNumberOfPassengers = maxNumberOfPassengers;
 }
 
-// print() override
+void CruiseShip::printShip(CruiseShip &cs)
+{
+    cout << "~-= CRUISE SHIP =-~" << endl
+         << "Name: " << cs.getShipName() << endl
+         << "Maximum Passenger Capacity: " + maxNumberOfPassengers << endl;
+}

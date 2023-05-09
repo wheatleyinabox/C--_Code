@@ -20,5 +20,5 @@ class CruiseShip : public Ship
         int getMaxNumberOfPassengers() const;
         void setMaxNumberOfPassengers(int maxNumberOfPassengers);
 
-        // vitural print() *OVERRIDDES BASE FUNCTION*
+        virtual void printShip() = 0;
 };

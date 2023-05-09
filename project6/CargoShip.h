@@ -20,5 +20,5 @@ public:
     int getCapacity() const;
     void setCapacity(int capacity);
 
-    // print() OVERRIDE
+    virtual void printShip() = 0;
 };

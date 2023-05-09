@@ -23,5 +23,5 @@ class Ship
         void setShipName(std::string shipName);
         void setConstructionDate(std::string constructionDate);
 
-        // print() *<< overload*
+        virtual void printShip() = 0;
 };

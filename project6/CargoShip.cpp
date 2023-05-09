@@ -30,9 +30,17 @@ void CargoShip::setCapacity(int capacity)
     this->capacity = capacity;
 }
 
-void CargoShip::printShip(CargoShip &cs)
+void CargoShip::printShip()
 {
-    cout << "~-= CRUISE SHIP =-~" << endl << 
-    "Name: " << cs.getShipName() << endl << 
-    "Maximum Cargo Capacity: " << capacity << endl;
+    cout << "~-= CARGO SHIP =-~" << endl << 
+    "Name: " << getShipName() << endl << 
+    "Maximum Cargo Capacity: " << getCapacity() << endl;
+}
+
+// TYPE(NAME,YEAR BUILT,SPECIFIC)
+ostream& operator<<(std::ostream& OS, CargoShip cargoShip)
+{
+    OS << "CargoShip(" << cargoShip.getShipName() << "," << cargoShip.getConstructionDate() 
+       << "," << cargoShip.getCapacity() << ")" << endl;
+    return OS;
 }

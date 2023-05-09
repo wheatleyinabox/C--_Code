@@ -31,9 +31,17 @@ void CruiseShip::setMaxNumberOfPassengers(int maxNumberOfPassengers)
     this->maxNumberOfPassengers = maxNumberOfPassengers;
 }
 
-void CruiseShip::printShip(CruiseShip &cs)
+void CruiseShip::printShip()
 {
     cout << "~-= CRUISE SHIP =-~" << endl << 
-    "Name: " << cs.getShipName() << endl << 
-    "Maximum Passenger Capacity: " << maxNumberOfPassengers << endl;
+    "Name: " << getShipName() << endl << 
+    "Maximum Passenger Capacity: " << getMaxNumberOfPassengers() << endl;
+}
+
+// TYPE(NAME,YEAR BUILT,SPECIFIC)
+ostream& operator<<(std::ostream& OS, CruiseShip cruiseShip)
+{
+    OS << "CruiseShip(" << cruiseShip.getShipName() << "," << cruiseShip.getConstructionDate() 
+       << "," << cruiseShip.getMaxNumberOfPassengers() << ")" << endl;
+    return OS;
 }

@@ -20,5 +20,7 @@ class CruiseShip : public Ship
         int getMaxNumberOfPassengers() const;
         void setMaxNumberOfPassengers(int maxNumberOfPassengers);
 
-        virtual void printShip(CruiseShip &cs) = 0;
+        virtual void printShip();
+
+        friend std::ostream& operator<<(std::ostream& OS, CruiseShip cruiseShip);
 };

@@ -20,5 +20,7 @@ public:
     int getCapacity() const;
     void setCapacity(int capacity);
 
-    virtual void printShip(CargoShip &cs) = 0;
+    virtual void printShip();
+
+    friend std::ostream& operator<<(std::ostream& OS, Ship ship);
 };

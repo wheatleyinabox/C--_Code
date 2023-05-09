@@ -23,5 +23,7 @@ class Ship
         void setShipName(std::string shipName);
         void setConstructionDate(std::string constructionDate);
 
-        virtual void printShip() = 0;
+        virtual void printShip();
+
+        friend std::ostream& operator<<(std::ostream& OS, Ship ship);
 };

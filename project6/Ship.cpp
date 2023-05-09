@@ -43,6 +43,13 @@ void Ship::setConstructionDate(std::string constructionDate)
 void Ship::printShip()
 {
     cout << "~-= SHIP =-~" << endl << 
-    "Name: " << shipName << endl << 
-    "Date Construction: " + constructionDate << endl;
+    "Name: " << getShipName() << endl << 
+    "Date Construction: " + getConstructionDate() << endl;
+}
+
+// TYPE(NAME,YEAR BUILT,SPECIFIC)
+ostream& operator<<(std::ostream& OS, Ship ship)
+{
+    OS << "Ship(" << ship.getShipName() << "," << ship.getConstructionDate() << ")" << endl;
+    return OS;
 }

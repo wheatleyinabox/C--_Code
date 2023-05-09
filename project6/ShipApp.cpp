@@ -24,11 +24,17 @@ int main()
 
     cout << "PROGRAMMING CHALLENGE #12" << endl;
     const int size = 3;
+
     Ship *dynamicShipArray[size] =
     {   new Ship("Gammy", "4/13/1945"),
         new CruiseShip("Catalina", "8/24/2019", 200),
         new CargoShip("Porter", "3/6/2012", 30)
     };
+
+    // Non-Dynamic:
+    Ship lameShip("Gammy", "4/13/1945");
+    CruiseShip partyShip("Catalina", "8/24/2019", 200);
+    CargoShip storageShip("Porter", "3/6/2012", 30);
 
     for (int i = 0; i < size; i++)
     {
@@ -39,10 +45,9 @@ int main()
 // >> OPERATOR OVERLOADING: USER INPUT CREATING A CRUISESHIP OBJECT
 
 // << OPERATOR OVERLOADING: TYPE(NAME,YEAR BUILT,SPECIFIC)
-    for (int i = 0; i < size; i++)
-    {
-        cout << dynamicShipArray[i];
-    }
+    cout << lameShip << endl;
+    cout << partyShip << endl;
+    cout << storageShip << endl;
 
 // + AND POSTFIX/PREFIX ++ OPERATOR OVERLOADING: INCREMENT CRUISESHIP OBJECT
 

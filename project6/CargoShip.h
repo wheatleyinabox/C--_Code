@@ -22,5 +22,5 @@ public:
 
     virtual void printShip();
 
-    friend std::ostream& operator<<(std::ostream& OS, Ship ship);
+    friend std::ostream& operator<<(std::ostream& OS, CargoShip cargoShip);
 };

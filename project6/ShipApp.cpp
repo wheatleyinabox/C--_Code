@@ -45,8 +45,8 @@ int main()
 // >> OPERATOR OVERLOADING: USER INPUT CREATING A CRUISESHIP OBJECT
 
 // << OPERATOR OVERLOADING: TYPE(NAME,YEAR BUILT,SPECIFIC)
-    cout << lameShip << endl;
-    cout << partyShip << endl;
+    cout << lameShip;
+    cout << partyShip;
     cout << storageShip << endl;
 
 // + AND POSTFIX/PREFIX ++ OPERATOR OVERLOADING: INCREMENT CRUISESHIP OBJECT

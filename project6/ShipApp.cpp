@@ -12,17 +12,39 @@
 #include <fstream>
 #include <string>
 
-using namespace std;
-
 #include "Ship.h"
 #include "CruiseShip.h"
 #include "CargoShip.h"
 
+using namespace std;
+
 int main()
 {
-    cout << "Ship by V. DeLeon" << endl;
+    cout << "Ship by V. DeLeon" << endl << endl;
 
-    // do the things :O
+    cout << "PROGRAMMING CHALLENGE #12" << endl;
+    const int size = 3;
+    Ship *dynamicShipArray[size] =
+    {   new Ship("Gammy", "4/13/1945"),
+        new CruiseShip("Catalina", "8/24/2019", 200),
+        new CargoShip("Porter", "3/6/2012", 30)
+    };
+
+    for (int i = 0; i < size; i++)
+    {
+        dynamicShipArray[i]->printShip();
+        cout << endl;
+    }
+
+// >> OPERATOR OVERLOADING: USER INPUT CREATING A CRUISESHIP OBJECT
+
+// << OPERATOR OVERLOADING: TYPE(NAME,YEAR BUILT,SPECIFIC)
+    for (int i = 0; i < size; i++)
+    {
+        cout << dynamicShipArray[i];
+    }
+
+// + AND POSTFIX/PREFIX ++ OPERATOR OVERLOADING: INCREMENT CRUISESHIP OBJECT
 
     return 0;
 }

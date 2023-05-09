@@ -9,6 +9,7 @@
 //              and create a dynamically allocated array of ships to then create a variety of operator overloading functions.
 //
 #include <iostream>
+#include <fstream>
 #include <string>
 
 #include "CruiseShip.h"
@@ -32,7 +33,7 @@ void CruiseShip::setMaxNumberOfPassengers(int maxNumberOfPassengers)
 
 void CruiseShip::printShip(CruiseShip &cs)
 {
-    cout << "~-= CRUISE SHIP =-~" << endl
-         << "Name: " << cs.getShipName() << endl
-         << "Maximum Passenger Capacity: " + maxNumberOfPassengers << endl;
+    cout << "~-= CRUISE SHIP =-~" << endl << 
+    "Name: " << cs.getShipName() << endl << 
+    "Maximum Passenger Capacity: " << maxNumberOfPassengers << endl;
 }

@@ -9,9 +9,12 @@
 //              and create a dynamically allocated array of ships to then create a variety of operator overloading functions.
 //
 #include <iostream>
+#include <fstream>
 #include <string>
 
 #include "CargoShip.h"
+
+using namespace std;
 
 CargoShip::CargoShip(std::string shipName, std::string constructionDate, int capacity) : Ship(shipName, constructionDate)
 {
@@ -29,7 +32,7 @@ void CargoShip::setCapacity(int capacity)
 
 void CargoShip::printShip(CargoShip &cs)
 {
-    cout << "~-= CRUISE SHIP =-~" << endl
-         << "Name: " << cs.getShipName() << endl
-         << "Maximum Cargo Capacity: " + capacity << endl;
+    cout << "~-= CRUISE SHIP =-~" << endl << 
+    "Name: " << cs.getShipName() << endl << 
+    "Maximum Cargo Capacity: " << capacity << endl;
 }

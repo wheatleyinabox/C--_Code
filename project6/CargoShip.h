@@ -20,5 +20,5 @@ public:
     int getCapacity() const;
     void setCapacity(int capacity);
 
-    virtual void printShip() = 0;
+    virtual void printShip(CargoShip &cs) = 0;
 };

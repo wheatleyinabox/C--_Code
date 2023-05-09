@@ -9,7 +9,9 @@
 //              and create a dynamically allocated array of ships to then create a variety of operator overloading functions.
 //
 #include <iostream>
+#include <fstream>
 #include <string>
+
 #include "Ship.h"
 
 using namespace std;
@@ -40,7 +42,7 @@ void Ship::setConstructionDate(std::string constructionDate)
 
 void Ship::printShip()
 {
-    cout << "~-= SHIP =-~" << endl
-         << "Name: " << shipName << endl
-         << "Date Construction: " + constructionDate << endl;
+    cout << "~-= SHIP =-~" << endl << 
+    "Name: " << shipName << endl << 
+    "Date Construction: " + constructionDate << endl;
 }
